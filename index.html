@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Opportunities | Join Our Team</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="application-container">
+        <div class="application-header">
+            <h1><i class="fas fa-briefcase"></i> Join Our Team</h1>
+            <p>Fill out the form below to apply for a position with us</p>
+        </div>
+
+        <form id="jobApplicationForm" class="application-form" action="https://formsubmit.co/otienobrian029@gmail.com" method="POST" enctype="multipart/form-data">
+            <!-- Hidden fields for FormSubmit configuration -->
+            <input type="hidden" name="_subject" value="New Job Application Submission">
+            <input type="hidden" name="_autoresponse" value="Thank you for your job application! We've received your submission and will review it shortly. If your qualifications match our needs, we'll be in touch to schedule an interview.">
+            <input type="hidden" name="_template" value="table">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+
+            <!-- Personal Information Section -->
+            <fieldset class="form-section">
+                <legend><i class="fas fa-user"></i> Personal Information</legend>
+                
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="Full Name" required>
+                    <i class="fas fa-user input-icon"></i>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phoneNumber">Phone Number *</label>
+                        <input type="tel" id="phoneNumber" name="Phone Number" required>
+                        <i class="fas fa-phone input-icon"></i>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="Email" required>
+                        <i class="fas fa-envelope input-icon"></i>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Position Information -->
+            <fieldset class="form-section">
+                <legend><i class="fas fa-briefcase"></i> Position Details</legend>
+                
+                <div class="form-group">
+                    <label for="position">Position Applying For *</label>
+                    <select id="position" name="Position" required>
+                        <option value="" disabled selected>Select a position</option>
+                        <option value="Software Developer">Software Developer</option>
+                        <option value="Marketing Manager">Marketing Manager</option>
+                        <option value="Graphic Designer">Graphic Designer</option>
+                        <option value="Customer Support">Customer Support</option>
+                        <option value="Project Manager">Project Manager</option>
+                        <option value="Other">Other (Please Specify)</option>
+                    </select>
+                    <i class="fas fa-chevron-down input-icon"></i>
+                </div>
+                
+                <div class="form-group" id="otherPositionContainer" style="display: none;">
+                    <label for="otherPosition">Specify Position</label>
+                    <input type="text" id="otherPosition" name="Other Position">
+                    <i class="fas fa-pen input-icon"></i>
+                </div>
+            </fieldset>
+
+            <!-- Document Uploads -->
+            <fieldset class="form-section">
+                <legend><i class="fas fa-file-upload"></i> Required Documents</legend>
+                
+                <div class="form-row">
+                    <div class="form-group file-upload">
+                        <label for="passportPhoto">Passport Photo *</label>
+                        <div class="upload-area" id="passportUploadArea">
+                            <i class="fas fa-camera upload-icon"></i>
+                            <p>Click to upload passport photo</p>
+                            <input type="file" id="passportPhoto" name="Passport Photo" accept="image/*" required>
+                        </div>
+                        <div class="file-preview" id="passportPreview"></div>
+                    </div>
+                    
+                    <div class="form-group file-upload">
+                        <label for="idDocument">ID Document Copy *</label>
+                        <div class="upload-area" id="idUploadArea">
+                            <i class="fas fa-id-card upload-icon"></i>
+                            <p>Click to upload ID document</p>
+                            <input type="file" id="idDocument" name="ID Document" accept=".pdf,.jpg,.jpeg,.png" required>
+                        </div>
+                        <div class="file-preview" id="idPreview"></div>
+                    </div>
+                </div>
+                
+                <div class="form-group file-upload">
+                    <label for="resume">Resume/CV (Optional)</label>
+                    <div class="upload-area" id="resumeUploadArea">
+                        <i class="fas fa-file-pdf upload-icon"></i>
+                        <p>Click to upload resume (PDF, DOC)</p>
+                        <input type="file" id="resume" name="Resume" accept=".pdf,.doc,.docx">
+                    </div>
+                    <div class="file-preview" id="resumePreview"></div>
+                </div>
+            </fieldset>
+
+            <!-- Additional Information -->
+            <fieldset class="form-section">
+                <legend><i class="fas fa-info-circle"></i> Additional Information</legend>
+                
+                <div class="form-group">
+                    <label for="coverLetter">Cover Letter</label>
+                    <textarea id="coverLetter" name="Cover Letter" rows="5" placeholder="Tell us why you'd be a great fit for this position..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="references">References</label>
+                    <textarea id="references" name="References" rows="3" placeholder="Name, relationship, and contact information of references"></textarea>
+                </div>
+            </fieldset>
+
+            <!-- Terms and Submission -->
+            <div class="form-footer">
+                <div class="form-group terms">
+                    <input type="checkbox" id="agreeTerms" name="Agreed to Terms" required>
+                    <label for="agreeTerms">I certify that all information provided is accurate and complete *</label>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    <span>Submit Application</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </form>
+
+        <div class="application-footer">
+            <p>We'll contact you within 5 business days if your application is shortlisted.</p>
+            <p>For any questions, please contact <a href="mailto:otienobrian029@gmail.com">otienobrian029@gmail.com</a></p>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon success">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Application Submitted!</h2>
+            <p>Thank you for applying. We've received your application and will review it shortly.</p>
+            <p>A confirmation has been sent to your email.</p>
+            <button class="modal-close-btn" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js">
+      document.addEventListener('DOMContentLoaded', function() {
+    // Form elements
+    const form = document.getElementById('jobApplicationForm');
+    const positionSelect = document.getElementById('position');
+    const otherPositionContainer = document.getElementById('otherPositionContainer');
+    
+    // File upload elements
+    const passportUpload = document.getElementById('passportPhoto');
+    const passportPreview = document.getElementById('passportPreview');
+    const passportUploadArea = document.getElementById('passportUploadArea');
+    
+    const idUpload = document.getElementById('idDocument');
+    const idPreview = document.getElementById('idPreview');
+    const idUploadArea = document.getElementById('idUploadArea');
+    
+    const resumeUpload = document.getElementById('resume');
+    const resumePreview = document.getElementById('resumePreview');
+    const resumeUploadArea = document.getElementById('resumeUploadArea');
+    
+    // Modal element
+    const successModal = document.getElementById('successModal');
+    
+    // Show/hide other position field based on selection
+    positionSelect.addEventListener('change', function() {
+        if (this.value === 'Other') {
+            otherPositionContainer.style.display = 'block';
+        } else {
+            otherPositionContainer.style.display = 'none';
+        }
+    });
+    
+    // Handle passport photo upload
+    passportUpload.addEventListener('change', function(e) {
+        handleFileUpload(e, passportPreview, passportUploadArea);
+    });
+    
+    // Handle ID document upload
+    idUpload.addEventListener('change', function(e) {
+        handleFileUpload(e, idPreview, idUploadArea);
+    });
+    
+    // Handle resume upload
+    resumeUpload.addEventListener('change', function(e) {
+        handleFileUpload(e, resumePreview, resumeUploadArea);
+    });
+    
+    // Form submission
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Show loading state
+        const submitBtn = form.querySelector('.submit-btn');
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
+        submitBtn.disabled = true;
+        
+        // In a real implementation, you would send the form data to your server
+        // Here we simulate a successful submission after 2 seconds
+        setTimeout(function() {
+            // Reset form
+            form.reset();
+            passportPreview.innerHTML = '';
+            passportPreview.style.display = 'none';
+            idPreview.innerHTML = '';
+            idPreview.style.display = 'none';
+            resumePreview.innerHTML = '';
+            resumePreview.style.display = 'none';
+            
+            // Show success modal
+            successModal.style.display = 'flex';
+            
+            // Reset button
+            submitBtn.innerHTML = '<span>Submit Application</span><i class="fas fa-paper-plane"></i>';
+            submitBtn.disabled = false;
+        }, 2000);
+    });
+    
+    // Function to handle file upload preview
+    function handleFileUpload(event, previewElement, uploadArea) {
+        const file = event.target.files[0];
+        if (!file) return;
+        
+        previewElement.style.display = 'block';
+        previewElement.innerHTML = '';
+        
+        // Create file info element
+        const fileInfo = document.createElement('div');
+        fileInfo.className = 'file-info';
+        
+        const fileName = document.createElement('span');
+        fileName.className = 'file-name';
+        fileName.textContent = file.name;
+        
+        const fileSize = document.createElement('span');
+        fileSize.className = 'file-size';
+        fileSize.textContent = formatFileSize(file.size);
+        
+        const removeFile = document.createElement('span');
+        removeFile.className = 'remove-file';
+        removeFile.innerHTML = '<i class="fas fa-times"></i> Remove';
+        removeFile.addEventListener('click', function() {
+            event.target.value = '';
+            previewElement.innerHTML = '';
+            previewElement.style.display = 'none';
+        });
+        
+        fileInfo.appendChild(fileName);
+        fileInfo.appendChild(document.createElement('br'));
+        fileInfo.appendChild(fileSize);
+        fileInfo.appendChild(removeFile);
+        
+        // If it's an image, create a thumbnail
+        if (file.type.startsWith('image/')) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const img = document.createElement('img');
+                img.src = e.target.result;
+                previewElement.appendChild(img);
+                previewElement.appendChild(fileInfo);
+            };
+            reader.readAsDataURL(file);
+        } else {
+            // For non-image files, just show file info
+            const fileIcon = document.createElement('i');
+            if (file.type.includes('pdf')) {
+                fileIcon.className = 'fas fa-file-pdf';
+                fileIcon.style.color = '#e63946';
+                fileIcon.style.fontSize = '3rem';
+                fileIcon.style.marginRight = '10px';
+            } else if (file.type.includes('document') || file.type.includes('msword')) {
+                fileIcon.className = 'fas fa-file-word';
+                fileIcon.style.color = '#2a5699';
+                fileIcon.style.fontSize = '3rem';
+                fileIcon.style.marginRight = '10px';
+            } else {
+                fileIcon.className = 'fas fa-file';
+                fileIcon.style.fontSize = '3rem';
+                fileIcon.style.marginRight = '10px';
+            }
+            
+            previewElement.appendChild(fileIcon);
+            previewElement.appendChild(fileInfo);
+        }
+        
+        // Update upload area text
+        uploadArea.querySelector('p').textContent = 'File selected: ' + file.name;
+    }
+    
+    // Helper function to format file size
+    function formatFileSize(bytes) {
+        if (bytes === 0) return '0 Bytes';
+        const k = 1024;
+        const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+        const i = Math.floor(Math.log(bytes) / Math.log(k));
+        return parseFloat((bytes / Math.pow(k, i)).toFixed(1) + ' ' + sizes[i]);
+    }
+});
+
+// Function to close modal
+function closeModal() {
+    document.getElementById('successModal').style.display = 'none';
+}
+    </script>
+    <style>
+      :root {
+    --primary-color: #4361ee;
+    --secondary-color: #3f37c9;
+    --accent-color: #4895ef;
+    --success-color: #4cc9f0;
+    --text-color: #2b2d42;
+    --light-text: #8d99ae;
+    --background-color: #f8f9fa;
+    --white: #ffffff;
+    --border-color: #e9ecef;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --transition: all 0.3s ease;
+    --border-radius: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding: 20px;
+}
+
+.application-container {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.application-header {
+    padding: 30px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    text-align: center;
+}
+
+.application-header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.application-header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.application-form {
+    padding: 30px;
+}
+
+.form-section {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 25px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.form-section legend {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0 10px;
+    color: var(--primary-color);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.form-group label::after {
+    content: ' *';
+    color: #e63946;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.form-group input[required] + label::after,
+.form-group select[required] + label::after,
+.form-group textarea[required] + label::after {
+    opacity: 1;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px 12px 40px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.form-group textarea {
+    padding: 12px 15px;
+    min-height: 100px;
+    resize: vertical;
+}
+
+.form-group select {
+    appearance: none;
+    background-color: var(--white);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
+}
+
+.input-icon {
+    position: absolute;
+    left: 15px;
+    top: 40px;
+    color: var(--light-text);
+    transition: var(--transition);
+}
+
+.form-group input:focus + .input-icon,
+.form-group select:focus + .input-icon {
+    color: var(--primary-color);
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.file-upload {
+    margin-bottom: 15px;
+}
+
+.upload-area {
+    border: 2px dashed var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 25px;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.upload-area:hover {
+    border-color: var(--accent-color);
+    background-color: rgba(72, 149, 239, 0.05);
+}
+
+.upload-icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.upload-area p {
+    color: var(--light-text);
+    font-size: 0.9rem;
+}
+
+.file-upload input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.file-preview {
+    margin-top: 10px;
+    display: none;
+}
+
+.file-preview img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 4px;
+    margin-right: 10px;
+    border: 1px solid var(--border-color);
+}
+
+.file-preview .file-info {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.file-preview .file-name {
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: block;
+}
+
+.file-preview .file-size {
+    font-size: 0.8rem;
+    color: var(--light-text);
+}
+
+.remove-file {
+    color: #e63946;
+    font-size: 0.8rem;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.terms input {
+    width: auto;
+    margin-right: 10px;
+}
+
+.terms label {
+    margin-bottom: 0;
+}
+
+.submit-btn {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    border: none;
+    padding: 15px 30px;
+    border-radius: var(--border-radius);
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    transition: var(--transition);
+    box-shadow: 0 4px 15px rgba(67, 97, 238, 0.3);
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(67, 97, 238, 0.4);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+.application-footer {
+    padding: 20px;
+    text-align: center;
+    color: var(--light-text);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.application-footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.application-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    box-shadow: var(--shadow);
+    animation: modalFadeIn 0.3s ease;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.modal-icon.success {
+    color: var(--success-color);
+}
+
+.modal h2 {
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.modal p {
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.modal-close-btn {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.modal-close-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .application-header {
+        padding: 20px;
+    }
+    
+    .application-form {
+        padding: 20px;
+    }
+    
+    .form-section {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .application-container {
+        margin: 10px auto;
+    }
+    
+    .application-header h1 {
+        font-size: 1.8rem;
+    }
+}
+    </style>
+</body>
+</html>
